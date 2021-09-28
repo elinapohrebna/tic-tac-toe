@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    border: 100px  black;
+    width: 700px;
+    height: 700px;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: #fcba03;
+}
+
+.header > * {
+    color: #fffefa;
+}
+
+.header__turn {
+    padding: 30px;
+    font-size: x-large;
+}
+
+.header__status {
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: larger;
+}
+
+.header__restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    background: #fcf7cf;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board__tile {
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-family: cursive;
+    color: #575335;
+}
+
+.board__tile:hover {
+    background: #eeeeee;
+}
+
+.board__tile--winner {
+    color: #3ccf57;
+}
